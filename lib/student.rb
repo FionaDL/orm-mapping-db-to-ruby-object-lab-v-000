@@ -1,3 +1,6 @@
+require 'pry'
+
+
 class Student
   attr_accessor :id, :name, :grade
 
@@ -58,6 +61,7 @@ class Student
 
   def self.all_students_in_grade_X(x)
     self.all.find_all do |student|
+      binding.pry
       student.grade == x
     end
   end
