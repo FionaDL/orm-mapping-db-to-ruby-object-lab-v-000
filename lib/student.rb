@@ -41,6 +41,7 @@ class Student
   def self.students_below_12th_grade
     self.all.find_all do |student|
       if ["9","10","11"].include?(student.grade)
+      end
     end
   end
 
