@@ -50,6 +50,12 @@ class Student
     end.first(x)
   end
 
+  def self.first_X_students_in_grade_10
+    self.all.find_all do |student|
+      student.grade == "10"
+    end.first
+  end
+
 
 
   def save
