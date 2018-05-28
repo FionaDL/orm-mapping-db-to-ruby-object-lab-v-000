@@ -33,7 +33,7 @@ class Student
   end
 
   def self.count_all_students_in_grade_9
-    9thgrade= self.all.find_all |row|
+     self.all.find_all |row|
      grade == 9
    end
  end
