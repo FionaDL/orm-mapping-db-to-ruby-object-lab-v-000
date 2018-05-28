@@ -36,10 +36,9 @@ class Student
     9thgrade= self.all.find_all |row|
      grade == 9
    end
-   9thgrade.count
  end
-     
-      
+
+
 
   def save
     sql = <<-SQL
