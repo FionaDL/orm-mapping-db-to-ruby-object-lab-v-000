@@ -32,6 +32,15 @@ class Student
     end.first
   end
 
+  def self.count_all_students_in_grade_9
+    9thgrade= self.all.find_all |row|
+     grade == 9
+   end
+   9thgrade.count
+ end
+     
+      
+
   def save
     sql = <<-SQL
       INSERT INTO students (name, grade)
@@ -57,4 +66,5 @@ class Student
     sql = "DROP TABLE IF EXISTS students"
     DB[:conn].execute(sql)
   end
+
 end
