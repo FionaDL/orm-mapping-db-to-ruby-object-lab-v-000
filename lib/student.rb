@@ -45,7 +45,7 @@ class Student
   end
 
   def self.first_X_students_in_grade_10(x)
-    self.all.find_all do (student)
+    self.all.find_all do |student|
       student.grade == "10"
     end.first(x)
   end
