@@ -56,6 +56,11 @@ class Student
     end.first
   end
 
+  def self.all_students_in_grade_X(x)
+    self.all.find_all do |student|
+      student.grade == x
+    end
+  end
 
 
   def save
